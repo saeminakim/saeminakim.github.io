@@ -1,90 +1,20 @@
-# Jekyll Atlantic - A Jekyll Tailwind Theme
+# Hydejack Starter Kit
 
-Atlantic is a beautiful Tailwind CSS theme. It shows best practices for using Tailwind with Jekyll.
+A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
 
-[Live Demo](https://jekyll-atlantic.netlify.app/) | [Zerostatic Themes](https://www.zerostatic.io/theme/jekyll-atlantic/)
+## Quick Start
+### Running locally
+1. Clone repository (git users), or [download] and unzip.
+2. Open terminal, `cd` into root directory (where `_config.yml` is located)
+3. Run `bundle install` [^1]
+4. Run `bundle exec jekyll serve`
+5. Open <http://localhost:4000/hydejack-starter-kit/>
 
-![Jekyll Atlantic Theme screenshot](https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png)
+## What's next?
+* Open files and read the comments
+* Read the [docs](https://hydejack.com/docs/)
+* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
 
-### Theme features
+[^1]: Requires Bundler. Install with `gem install bundler`.
 
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/jekyll.svg" /> [Jekyll](https://jekyllrb.com/) 4.1+
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/tailwind.svg" /> [Tailwind CSS](https://tailwindcss.com/docs) v2.2+
-<img width="18" height="18" src="https://jamstackthemes.dev/images/icons/postcss.svg" /> [PostCSS](https://postcss.org/) 8.3+
-
-- Uses PostCSS with autoprefixer, nested css, cssnano (minify css) 
-- Works with native Jekyll commands `jekyll serve` and `jekyll build`
-- Correctly uses Tailwind to purge CSS in production
-- Full blog functionality
-- Beautfifuly designed responsive blog and post layouts
-- Blog categories
-- Blog authors (multiple)
-- Blog pagination
-- Ready to deploy to Netlify
-- Responsive design
-- Responsive menu
-- 100/100 Google Lighthouse speed score ⚡
-- 100/100 Google Lighthouse seo score 🏆
-- 94/100 Google Lighthouse accessibility score (but this is just because of the green text color contrast)
-- Page size is 10KB without images, can you believe it?? 🔥
-- Robust example content included
-- Royalty free illustrations included
-- Netlify & Github Pages ready
-
-## Installation
-
-### Installing Ruby & Jekyll
- 
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
-
-### Installing Theme
-
-Download or clone the theme.
-
-To run the theme locally, navigate to the theme directory and run:
-
-To use Tailwind and PostCSS:
-
-```
-npm install
-```
-
-```
-bundle install
-``` 
-
-To start the Jekyll local development server.
-
-```
-bundle exec jekyll serve
-``` 
-
-To build the theme.
- 
-```
-bundle exec jekyll build
-```
-
-## Deployment
-
-### Netlify
-
-Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/jekyll-atlantic-theme)
-
-### Github Pages
-This theme has been tested to work with Github Pages (and Github Project Pages). When using Github Pages you will need to update the `baseurl` in the `_config.yml` otherwise all the css, images and paths will be broken.
-
-For example the site https://zerostaticthemes.github.io/jekyll-atlantic-theme would have `baseurl: "/jekyll-atlantic-theme/"`
-
-### Credits
-
-- Stock images by Unsplash - https://unsplash.com/
-- Feature icons by Noun Project - https://thenounproject.com/
-
-### License
-
-This theme is open source under the MIT license. 
-
-> Please do not create ports of this theme. You can't re-distribute or re-sell this theme as a theme, stock, in a tool or as a template.
+[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
