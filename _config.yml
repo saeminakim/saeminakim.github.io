@@ -9,7 +9,7 @@ url:                   https://saeminakim.github.io
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               '/hydejack-starter-kit'
+baseurl:               ''
 
 
 # General settings
@@ -17,7 +17,7 @@ url:                   https://saeminakim.github.io
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 김릴리는 릴리리야
@@ -43,15 +43,19 @@ author:
   # Used by `jekyll-feed`:
   name:                Lily Kim
   email:               helloimlily@gmail.com
+  picture:             /assets/img/me.jpg
+  social:
+    github:           saeminakim
+    email:            helloimlily@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
-menu:
-  - title:             About
-    url:               /about/
-  - title:             CS
-    url:               /cs/
+# menu:
+#   - title:             About
+#     url:               /about/
+#   - title:             CS
+#     url:               /cs/
   # - title:             About
     # url:               /about/
 
@@ -69,11 +73,12 @@ menu:
 copyright:             © 2021. All rights reserved.
 
 # Format of the permalinks
-permalink:             /:categories/:year-:month-:day-:title/
+# permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /:num/
+paginate_path:         /page-:num/
+excerpt_separator:     <!--more-->
 
 
 # Theme
@@ -113,32 +118,32 @@ font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 defaults:
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
-  - scope:
-      path:            hyde/
-    values:
-      accent_color:    rgb(38,139,210)
-      theme_color:     rgb(32,32,32)
-      accent_image:
-        background:    rgb(32,32,32)
-        overlay:       false
+  # - scope:
+  #     path:            hyde/
+  #   values:
+  #     accent_color:    rgb(38,139,210)
+  #     theme_color:     rgb(32,32,32)
+  #     accent_image:
+  #       background:    rgb(32,32,32)
+  #       overlay:       false
 
   # Don't include documents in assets in the sitemap
   - scope:
-      path:            assets/
+      path:            assets/**
     values:
       sitemap:         false
 
   - scope:
-      path:            licenses/
+      path:            licenses/**
     values:
       layout:          plain
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
-  # - scope:
-  #     type:            posts
-  #   values:
-  #     comments:        true
+  - scope:
+      type:            posts
+    values:
+      comments:        true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -422,3 +427,9 @@ jekyll_compose:
           url: https://example.com
 
 favicon: /assets/img/favicon.ico
+
+# jekyll-feed settings
+feed:
+  categories:
+    - studylog
+    # - review
