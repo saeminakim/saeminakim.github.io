@@ -51,11 +51,13 @@ author:
   # twitter:             <username>
 
 # Add links to the sidebar.
-# menu:
-#   - title:             About
-#     url:               /about/
-#   - title:             CS
-#     url:               /cs/
+menu:
+  - title:             About
+    url:               /about/
+  - title:             Studylog
+    url:               /studylog/
+  - title:             Journal
+    url:               /journal/ 
   # - title:             About
     # url:               /about/
 
