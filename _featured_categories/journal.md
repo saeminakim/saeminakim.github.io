@@ -1,10 +1,10 @@
 ---
 layout: list
+type: category
 title: Journal
 slug: journal
-menu: true
-submenu: false
-order: 3
+sidebar: true
+order: 4
 description: >
   Journals
 ---
